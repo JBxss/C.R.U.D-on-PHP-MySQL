@@ -15,6 +15,20 @@ if(isset($_GET['id'])){
 
 }
 
+if(isset($_POST['update'])){
+    $id = $_GET['id'];
+    $title = $_POST['title'];
+    $description = $_POST['description'];
+
+    $query = "UPDATE Task set title = '$title', description = '$description' WHERE id = $id";
+    mysqli_query($conn, $query);
+
+    $_SESSION['message'] = 'Task Updated SUccesfully';
+    $_SESSION['message_type'] = 'warning';
+
+    header("Location: index.php");
+}
+
 ?>
 
 <?php include("includes/header.php")?>
@@ -23,7 +37,7 @@ if(isset($_GET['id'])){
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card card-body">
-                <form action="">
+                <form action="edit_task.php?id=<?= $_GET['id'] ?>" method="POST">
                     <div class="form-group pb-3">
                         <input type="text" name="title" value="<?= $title ?>" class="form-control" placeholder="Update Title">
                     </div>
