@@ -1,7 +1,7 @@
 # C.R.U.D-on-PHP-MySQL
 Este proyecto implementa un sistema básico de CRUD (Crear, Leer, Actualizar, Eliminar) utilizando PHP y MySQL. Proporciona una interfaz web para que los usuarios puedan administrar y manipular datos almacenados en una base de datos.
 
-## Funcionalidad
+## Funcionalidades
 
 El proyecto permite a los usuarios realizar las siguientes acciones:
 
@@ -9,6 +9,14 @@ El proyecto permite a los usuarios realizar las siguientes acciones:
 - Leer (consultar) los registros existentes y mostrarlos en una interfaz web amigable.
 - Actualizar los registros existentes para modificar su contenido.
 - Eliminar registros existentes de la base de datos.
+
+## Capturas de Pantalla
+
+![Captura de Pantalla 1](./img/screenshot.png)
+*Página principal con las operaciones basicas de un C.R.U.D*
+
+![Captura de Pantalla 2](./img/screenshot2.png)
+*Ventana de actualizacion de registros existentes*
 
 ## Tecnologías utilizadas
 
